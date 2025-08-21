@@ -5,26 +5,27 @@ To write a python program to find the Eigenvalues and Eigen Vectors
 1. 	Hardware – PCs
 2. 	Anaconda – Python 3.7 Installation / Moodle-Code Runner
 ## Algorithm:
-### Step1 : 
-create the function program import numpy as np
-### Step 2: 
-input as array as list element
-### Step 3: 
-Using the np.linalg.eig(),  we get two results (first is eigenvalue and second is eigenvector) of the given matrix.
-### Step 4: 
-and print result of the program
+### Step1 : Import the numpy module to use the built-in functions for calculation
+
+### Step 2: Prepare the lists from the matrix and assign in np.array()
+
+### Step 3: Using the np.linalg.eig(), we get two results (first is eigenvalue and second is eigenvector) of the given matrix.
+
+### Step 4: End the program. 
+
 ## Program:
 ```
-#Program to find the eigen values and eigen vectors.
-#Developed by: Manoj Kumar G
-#RegisterNumber:22005014
 import numpy as np
-A=np.array([[2,-3,0],[2,-5,0],[0,0,3]])
-values,vectors=np.linalg.eig(A)
-print("Eigen values are {} and Eigen Vectors are {}".format(values,vectors))
+A = np.array([[2, 2],[1, 3]])
+eigenvalues, eigenvectors = np.linalg.eig(A)
+print(f"Eigen values are ,eigenvalues and Eigen Vectors are,eigenvectors")
+
 ```
+
 ## Output:
-![eigenvaluesandvectors](https://github.com/manojMKJ/EIGENVALUES-AND-EIGENVECTORS/assets/120717614/426bf426-0cc8-41d7-a440-f2017d40505c)
+
+<img width="1920" height="1080" alt="Screenshot (32)" src="https://github.com/user-attachments/assets/cd6bef10-2f87-4d87-bc02-e946b6b9cef1" />
+
 
 ## Result:
 Thus the Eigenvalue and Eigenvector is successfully solved using python program
